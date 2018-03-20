@@ -1,2 +1,5 @@
 *.log
 *.tmp
+conf/
+test*
+uwsgi*
