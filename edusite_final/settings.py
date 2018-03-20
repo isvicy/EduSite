@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'edusite_final.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
+        'NAME': 'edusite111',
         'USER': os.environ.get('DJANGO_MYSQL_USER'),
         'PASSWORD': os.environ.get('DJANGO_MYSQL_PASSWORD'),
         'HOST': os.environ.get('DJANGO_MYSQL_HOST'),
