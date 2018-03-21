@@ -6,6 +6,8 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
 	<title>慕学在线网登录</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/login.css">
 </head>
@@ -57,9 +59,9 @@
             <div class="fl slide">
                 <div class="imgslide">
                     <ul class="imgs">
-                            <li><a href=""><img width="483" height="472" src="/static/images/mysql.jpg" /></a></li>
-                            <li><a href=""><img width="483" height="472" src="/static/images/mysql.jpg" /></a></li>
-                            <li><a href=""><img width="483" height="472" src="/static/images/mysql.jpg" /></a></li>
+                          {% for course_banner in course_banners %}
+                        <li><a href=""><img width="483" height="472" src="{{ MEDIA_URL }}{{ course_banner.image }}" /></a></li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="unslider-arrow prev"></div>
