@@ -70,7 +70,11 @@ class RegisterView(View):
     """用户注册View"""
     def get(self, request):
         register_form = RegisterForm()
-        return render(request, "register.html", {'register_from': register_form})
+        course_banners = Course.objects.filter(is_banner=True)
+        return render(request, "register.html", {
+            'register_from': register_form,
+            'course_banners': course_banners,
+        })
 
     def post(self, request):
         register_form = RegisterForm(request.POST)
@@ -101,7 +105,8 @@ class RegisterView(View):
 class LoginView(View):
     """完成login逻辑"""
     def get(self, request):
-        return render(request, "login.html", {})
+        course_banners = Course.objects.filter(is_banner=True)
+        return render(request, "login.html", {'course_banners': course_banners})
 
     def post(self, request):
         login_form = LoginForm(request.POST)
