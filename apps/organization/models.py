@@ -51,7 +51,7 @@ class Teacher(models.Model):
     name = models.CharField(max_length=50, verbose_name=u"教师名")
     course_nums = models.IntegerField(default=0, verbose_name=u"课程数")
     years = models.IntegerField(verbose_name=u"教师年龄", default=25)
-    image = models.ImageField(upload_to="teachers/%Y/%m", verbose_name=u"头像", max_length=100, default='')
+    image = models.ImageField(upload_to="teachers/%Y/%m", verbose_name=u"头像", max_length=100, null=True, blank=True)
     work_years = models.IntegerField(default=0, verbose_name=u"工作年限")
     work_company = models.CharField(max_length=50, verbose_name=u"就职公司")
     work_position = models.CharField(max_length=50, verbose_name=u"公司职位")
