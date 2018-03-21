@@ -4,3 +4,4 @@ conf/
 test*
 uwsgi*
 __pycache__/
+.idea/
