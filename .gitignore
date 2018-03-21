@@ -3,3 +3,4 @@
 conf/
 test*
 uwsgi*
+__pycache__/
