@@ -4,6 +4,7 @@
 - 已经部署到腾讯云: [EduSite](http://www.djangoflask.cn)
 
 ###网站功能:
+
 ![网站功能](http://oq782gkz3.bkt.clouddn.com/site_func.png)
 
 #### 使用方法：
