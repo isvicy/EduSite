@@ -1,9 +1,10 @@
-### Django EduSite Demo
+## Django EduSite Demo
 
+#### 简介：
 - 仿慕课网教程做成的教育类网站，基于Django1.11与python3.6.4，已完成基本功能，待后续改进。
 - 已经部署到腾讯云: [EduSite](http://www.djangoflask.cn)
 
-### 网站功能:
+#### 网站功能:
 
 ![网站功能](http://oq782gkz3.bkt.clouddn.com/site_func.png)
 
